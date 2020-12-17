@@ -71,3 +71,69 @@ print('What is the index for "yet?"?:', sentence.index('yet?'))
 print('Using the "\ n" here \n makes a line break' )
 
 print('-------------------------------')
+
+
+# ------------------------------------- #
+##    Different Number Manipulation    ##
+# ------------------------------------- #
+
+# arithmetic for python - * grabs everything from library
+from math import *
+
+print('What is 10 + 10?:', 10 + 10)
+
+print('What is 10 + 10, times 3?:', (10 + 10)*3)
+
+print('What is 10 + 10, times 3, then divided by 45?:', ((10 + 10)*3)/45)
+
+print('What is 10 + 10, times 3, then divided by 45, minus 32?:', (((10 + 10)*3)/45)-32)
+
+# print an integer, not a string
+print(505)
+
+# manipulate numbers as variables
+age = 25
+
+print('Hello, my age is', age)
+
+print('Hello, my age is', age+2)
+print('-------------------------------')
+
+# ------------------------------------- #
+##      Functions with Numbers         ##
+# ------------------------------------- #
+
+# dataset of numbers
+print(1,5,6,2,9,4,-30)
+
+# which number is the highest?
+print(max(1,5,6,2,9,4,-30), 'is the largest number')
+
+# which is the smallest number?
+print(min(1,5,6,2,9,4,-30), 'is the smallest number')
+
+# calculating powers
+print('5 to the second power is:', pow(5,2)) # pow(base,power)
+
+# round down the number
+print('5 to the second power, rounded is:', round(pow(5,2))) # pow(base,power)
+
+# get the absolute value
+print('The absolute value of -505 is:', abs(-505))
+
+# get the square root 
+print('The square root of 505 is:', sqrt(505))
+print('-------------------------------')
+
+# ------------------------------------- #
+##      Advanced Math Functions        ##
+# ------------------------------------- #
+
+# smallest integral value, bigger than the number
+print('The smallest integral value, bigger than the number, 23.999999 is', ceil(23.999999))
+
+# largest integral value, bigger than the number
+print('The largest integral value, bigger than the number, 23.999999', floor(23.999999))
+
+# factorials
+print('The factorial of 5 is:', factorial(5))
