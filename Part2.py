@@ -40,15 +40,55 @@ def calculation(a,b,c):
     print(a * b * c)
 
 calculation(2,2,2)
+print('-------------------------------')
 
 
+# ------------------------------------- #
+##    Understanding the IF Statement   ##      
+##               Part 1                ##
+# ------------------------------------- #
+
+# boolean values
+hungry = False
+thirsty = True
+
+# using IF 
+if hungry: # --> 'if hungry is True'
+    print("Let's grab take out!")
+else:
+    print("I'll drink some water.")
+
+# using IF with AND
+if hungry and thirsty: # --> 'if hungry and thirsty is True'
+    print("You grab take out and I'll get some drinks.")
+else:
+    print('Should we go for a walk?')
+
+# using IF with OR
+if hungry or thirsty: # --> 'if hungry or thirsty is True'
+    print("You grab take out and I'll get some water for me.")
+else:
+    print('How about a movie?')
+
+# using TWO IF statements in sequence - needs and else at the end
+if hungry:
+    print('I have homemade soup and bread for you.')
+elif thirsty:
+    print('Would you like red or white wine?')
+else:
+    print("Oh, let's take the dog for a walk then.")
+
+# flipping statements around
+if not hungry: # --> if hungry is False
+    print('I will come back later')
+
+print('-------------------------------')
 
 
-
-
-
-
-
+# ------------------------------------- #
+##    Understanding the IF Statement   ##      
+##               Part 2                ##
+# ------------------------------------- #
 
 
 
