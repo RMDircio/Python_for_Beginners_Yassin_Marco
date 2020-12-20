@@ -34,9 +34,12 @@
 ##      Use the Return Statement       ##
 # ------------------------------------- #
 
+def calculation(a,b,c):
+    print(a + b + c) # if 'return' is placed here, lines below will not print
+    print(a - b -c)
+    print(a * b * c)
 
-
-
+calculation(2,2,2)
 
 
 
