@@ -86,72 +86,100 @@
 
 
 # ------------------------------------- #
-##    Understanding the IF Statement   ##      
+##    Understanding the IF Statement   ##
 ##               Part 2                ##
 # ------------------------------------- #
 
-print('-------------------------------')
+# # compairing numbers
+# var_1 = 1
+# var_2 = 5
+# var_3 = 1
 
-# compairing numbers
-var_1 = 1
-var_2 = 5
-var_3 = 1
+# if var_1 == var_2 != var_3: # if var_1 equals var_2 but does not equal var_3 (
+#     print('Yes, they are equal.') # if True
+# else:
+#     print('No, they are NOT equal.') # if False
 
-if var_1 == var_2 != var_3: # if var_1 equals var_2 but does not equal var_3 (
-    print('Yes, they are equal.') # if True
-else:
-    print('No, they are NOT equal.') # if False
+# if var_1 > var_2:
+#     print('It is greater than.')
+# else:
+#     print('It is NOT greater than.')
 
-if var_1 > var_2:
-    print('It is greater than.')
-else:
-    print('It is NOT greater than.')
+# # comparing strings - mind caps!
+# color1 = 'blue'
+# color2 = 'red'
+# color3 = 'black'
+# color4 = 'yellow'
 
-# comparing strings - mind caps!
-color1 = 'blue'
-color2 = 'red'
-color3 = 'black'
-color4 = 'yellow'
+# if color1 == color2:
+#     print('Yes, they are the same color')
+# else:
+#     print('No, they are different colors')
 
-if color1 == color2:
-    print('Yes, they are the same color')
-else:
-    print('No, they are different colors')
+# # who is the richest person
 
-# who is the richest person
+# person1 = input('What is your name? ')
+# person1_wallet = input('How much money to you have? ')
 
-person1 = input('What is your name? ')
-person1_wallet = input('How much money to you have? ')
+# person2 = input('What is your name? ')
+# person2_wallet = input('How much money to you have? ')
 
-person2 = input('What is your name? ')
-person2_wallet = input('How much money to you have? ')
+# person3 = input('What is your name? ')
+# person3_wallet = input('How much money to you have? ')
 
-person3 = input('What is your name? ')
-person3_wallet = input('How much money to you have? ')
+# if float(person1_wallet) > float(person2_wallet) and float(person1_wallet) > float(person3_wallet):
+#     print(f'{person_1} is the richest.')
 
-if float(person1_wallet) > float(person2_wallet) and float(person1_wallet) > float(person3_wallet):
-    print(f'{person_1} is the richest.')
-
-elif float(person2_wallet) > float(person1_wallet) and float(person2_wallet) > float(person3_wallet):
-    print(f'{person_2} is the richest.')
+# elif float(person2_wallet) > float(person1_wallet) and float(person2_wallet) > float(person3_wallet):
+#     print(f'{person_2} is the richest.')
     
-elif float(person3_wallet) > float(person1_wallet) and float(person3_wallet) > float(person2_wallet):
-    print(f'{person3} is the richest.')
+# elif float(person3_wallet) > float(person1_wallet) and float(person3_wallet) > float(person2_wallet):
+#     print(f'{person3} is the richest.')
+
+# print('-------------------------------') 
+
+
+# ------------------------------------- #
+##    Understanding the IF Statement   ##
+##               Part 3                ##
+# ------------------------------------- #
+
+# converstation between two people
+
+# rules
+def questions():
+    rules = input("Please answer all questions. Reply with 'yes' or 'no'")
+    if rules != 'yes': # stop
+        return print('Try again.')
+    else:
+        print('Next question:')
+    question1 = input('Are you hungry? ')
+    if question1 != 'yes': # stop
+        return print('Okay, shall we go for a walk?')
+    else:
+        print('Next Question')
+    question2 = input('Would you like to eat at a restaurant? ')
+    if question2 != 'yes':
+        return print('Come eat at my place then.')
+    else:
+        print('Next Question')
+    question3 = input('Should we have tacos? ')
+    if question3 != 'yes':
+        return print('What would you like instead?')
+    else:
+        print("Let's go!")
+
+questions()
+
+# print('-------------------------------') 
+
+
+# ------------------------------------- #
+##          Working with Lists         ##
+# ------------------------------------- #
+
 
 print('-------------------------------') 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
