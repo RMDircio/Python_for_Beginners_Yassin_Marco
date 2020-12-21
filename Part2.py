@@ -34,13 +34,13 @@
 ##      Use the Return Statement       ##
 # ------------------------------------- #
 
-def calculation(a,b,c):
-    print(a + b + c) # if 'return' is placed here, lines below will not print
-    print(a - b -c)
-    print(a * b * c)
+# def calculation(a,b,c):
+#     print(a + b + c) # if 'return' is placed here, lines below will not print
+#     print(a - b -c)
+#     print(a * b * c)
 
-calculation(2,2,2)
-print('-------------------------------')
+# calculation(2,2,2)
+# print('-------------------------------')
 
 
 # ------------------------------------- #
@@ -48,41 +48,41 @@ print('-------------------------------')
 ##               Part 1                ##
 # ------------------------------------- #
 
-# boolean values
-hungry = False
-thirsty = True
+# # boolean values
+# hungry = False
+# thirsty = True
 
-# using IF 
-if hungry: # --> 'if hungry is True'
-    print("Let's grab take out!")
-else:
-    print("I'll drink some water.")
+# # using IF 
+# if hungry: # --> 'if hungry is True'
+#     print("Let's grab take out!")
+# else:
+#     print("I'll drink some water.")
 
-# using IF with AND
-if hungry and thirsty: # --> 'if hungry and thirsty is True'
-    print("You grab take out and I'll get some drinks.")
-else:
-    print('Should we go for a walk?')
+# # using IF with AND
+# if hungry and thirsty: # --> 'if hungry and thirsty is True'
+#     print("You grab take out and I'll get some drinks.")
+# else:
+#     print('Should we go for a walk?')
 
-# using IF with OR
-if hungry or thirsty: # --> 'if hungry or thirsty is True'
-    print("You grab take out and I'll get some water for me.")
-else:
-    print('How about a movie?')
+# # using IF with OR
+# if hungry or thirsty: # --> 'if hungry or thirsty is True'
+#     print("You grab take out and I'll get some water for me.")
+# else:
+#     print('How about a movie?')
 
-# using TWO IF statements in sequence - needs and else at the end
-if hungry:
-    print('I have homemade soup and bread for you.')
-elif thirsty:
-    print('Would you like red or white wine?')
-else:
-    print("Oh, let's take the dog for a walk then.")
+# # using TWO IF statements in sequence - needs and else at the end
+# if hungry:
+#     print('I have homemade soup and bread for you.')
+# elif thirsty:
+#     print('Would you like red or white wine?')
+# else:
+#     print("Oh, let's take the dog for a walk then.")
 
-# flipping statements around
-if not hungry: # --> if hungry is False
-    print('I will come back later')
+# # flipping statements around
+# if not hungry: # --> if hungry is False
+#     print('I will come back later')
 
-print('-------------------------------')
+# print('-------------------------------')
 
 
 # ------------------------------------- #
@@ -90,12 +90,55 @@ print('-------------------------------')
 ##               Part 2                ##
 # ------------------------------------- #
 
+print('-------------------------------')
 
+# compairing numbers
+var_1 = 1
+var_2 = 5
+var_3 = 1
 
+if var_1 == var_2 != var_3: # if var_1 equals var_2 but does not equal var_3 (
+    print('Yes, they are equal.') # if True
+else:
+    print('No, they are NOT equal.') # if False
 
+if var_1 > var_2:
+    print('It is greater than.')
+else:
+    print('It is NOT greater than.')
 
+# comparing strings - mind caps!
+color1 = 'blue'
+color2 = 'red'
+color3 = 'black'
+color4 = 'yellow'
 
+if color1 == color2:
+    print('Yes, they are the same color')
+else:
+    print('No, they are different colors')
 
+# who is the richest person
+
+person1 = input('What is your name? ')
+person1_wallet = input('How much money to you have? ')
+
+person2 = input('What is your name? ')
+person2_wallet = input('How much money to you have? ')
+
+person3 = input('What is your name? ')
+person3_wallet = input('How much money to you have? ')
+
+if float(person1_wallet) > float(person2_wallet) and float(person1_wallet) > float(person3_wallet):
+    print(f'{person_1} is the richest.')
+
+elif float(person2_wallet) > float(person1_wallet) and float(person2_wallet) > float(person3_wallet):
+    print(f'{person_2} is the richest.')
+    
+elif float(person3_wallet) > float(person1_wallet) and float(person3_wallet) > float(person2_wallet):
+    print(f'{person3} is the richest.')
+
+print('-------------------------------') 
 
 
 
