@@ -306,28 +306,60 @@
 ##       Understanding For Loops       ##
 # ------------------------------------- #
 
+# colors = ['blue', 'red', 'yellow', 'orange', 'black']
+
+# # print out each color septerate
+# for each_color in colors:
+#     print(each_color)
+
+# # print out each letter in string
+# for letter in 'Blue':
+#     print(letter)
+
+# # print only certain elements
+# for each_color in colors:
+#     print(each_color)
+#     if each_color == 'orange': # stop at 'orange', inclusive
+#         break
+
+# for number in range(6): # exclusive stops at 5
+#     print(number)
+
+# for number in range (0,10): # exclusive - stops at 9
+#     print(number)
+
+# print('-------------------------------')
+
+
+# ------------------------------------- #
+##   Creating and Blocking Passwords   ##
+# ------------------------------------- #
+
 print('-------------------------------')
 
-colors = ['blue', 'red', 'yellow', 'orange', 'black']
+user_password = 'pass123'
+user_answer = ''
+num_attempts = 0 # counter --> starts at zero
+max_attempts = 3 # number of attempts allowed
+max_attempts_reached = 'Not Reached'
 
-# print out each color septerate
-for each_color in colors:
-    print(each_color)
+# as long as user_password is wrong, run code
+while user_answer != user_password and max_attempts_reached != 'Reached':
+    if num_attempts < max_attempts: # attempts less than allowed , continue code
+        user_answer = input('Enter your password: ')
+        num_attempts += 1 # plus one to counter
+        
+    # when the counter gets to max level
+    else:
+        max_attempts_reached = 'Reached'
 
-# print out each letter in string
-for letter in 'Blue':
-    print(letter)
+# print statement for when max attempts
+if max_attempts_reached == 'Reached':
+    print('You have attempted the maximum allowed attempts for loging in, try again tomorrow.')
 
-# print only certain elements
-for each_color in colors:
-    print(each_color)
-    if each_color == 'orange': # stop at 'orange', inclusive
-        break
+# if the entered password is correct
+else:
+    print('Access Granted.')
 
-for number in range(6): # exclusive stops at 5
-    print(number)
-
-for number in range (0,10): # exclusive - stops at 9
-    print(number)
 
 print('-------------------------------')
