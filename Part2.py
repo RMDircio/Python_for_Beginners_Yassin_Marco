@@ -290,16 +290,16 @@
 ##           Loop Structure            ##
 # ------------------------------------- #
 
-var1 = 25
-var2 = 2000
+# var1 = 25
+# var2 = 2000
 
-# while loops need a break out point
-while var1 < var2:
-    print('var1 is:', var1)
-    print('var1 is less than var2')
-    var1 = var1 + 5 # this is a long running break
+# # while loops need a break out point
+# while var1 < var2:
+#     print('var1 is:', var1)
+#     print('var1 is less than var2')
+#     var1 = var1 + 5 # this is a long running break
 
-print('-------------------------------')
+# print('-------------------------------')
 
 
 # ------------------------------------- #
@@ -308,9 +308,26 @@ print('-------------------------------')
 
 print('-------------------------------')
 
+colors = ['blue', 'red', 'yellow', 'orange', 'black']
 
+# print out each color septerate
+for each_color in colors:
+    print(each_color)
 
+# print out each letter in string
+for letter in 'Blue':
+    print(letter)
 
+# print only certain elements
+for each_color in colors:
+    print(each_color)
+    if each_color == 'orange': # stop at 'orange', inclusive
+        break
 
+for number in range(6): # exclusive stops at 5
+    print(number)
+
+for number in range (0,10): # exclusive - stops at 9
+    print(number)
 
 print('-------------------------------')
