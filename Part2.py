@@ -234,19 +234,54 @@
 ##           List and Tuples            ##
 # ------------------------------------- #
 
-# lists - can manipulate
-list1 = [1,2,3,4] # brackets
-print(list1)
+# # lists - can manipulate
+# list1 = [1,2,3,4] # brackets
+# print(list1)
 
-# tuple - can NOT manipulate
-tuple1 = (1,2,3,4) # parentheses
-print(tuple1)
+# # tuple - can NOT manipulate
+# tuple1 = (1,2,3,4) # parentheses
+# print(tuple1)
 
-# example
-colors = ('blue', 'yellow', 'red')
-shapes = ('square', 'triangle', 'circle')
+# # example
+# colors = ('blue', 'yellow', 'red')
+# shapes = ('square', 'triangle', 'circle')
 
-new_tuple = colors + shapes
-print(new_tuple)
+# new_tuple = colors + shapes
+# print(new_tuple)
 
-print('-------------------------------') 
+# print('-------------------------------')
+
+
+# ------------------------------------- #
+##        What is a Dictionary         ##
+##              in Python              ##
+# ------------------------------------- #
+
+print('-------------------------------')
+
+# dictionary need curved brackets {}
+# keys need to be unique
+colors = {
+            'B' : 'Blue', # key : value
+            'R' : 'Red',
+            'O' : 'Orange'
+}
+
+# get the value from the key
+print(colors.get('B', 'Stop')) # .get(what you want, default value if item is not in dictionary)
+print(colors.get('G', 'Nope'))
+print(colors.get('b', 'Nope'))
+
+# create employee numbers and look them up
+company_empolyees= {
+                    555 : 'Nelson',
+                    146 : 'Okan',
+                    895 : 'Yesgi',
+                    648 : 'Opeian',
+                    721 : 'Hinesh'
+}
+
+print(company_empolyees.get(202, 'Employee is invalid'))
+
+
+print('-------------------------------')
