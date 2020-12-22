@@ -178,41 +178,55 @@
 ##          Working with Lists         ##
 # ------------------------------------- #
 
+# foods = ['apples', 'bananas', 'melons', 'strawberries', 'grapes']
+
+# print(foods) # prints all
+# print('First element is:', foods[0]) # prints first element
+# print(foods[1]) # prints second element
+# print(foods[2]) # prints third element
+
+# # change out items
+# foods[2] = 'avocados'
+# print(foods)
+
+# # selecting certain elements
+# print(foods[0:2]) # [inclusive : exclusive]
+# print(foods[3:]) # last two elements, leaving empty grabs everything till end
+
+# print('-------------------------------') 
+
+
+# ------------------------------------- #
+##     Using Functions with Lists      ##
+# ------------------------------------- #
 
 print('-------------------------------') 
 
-foods = ['apples', 'bananas', 'melons', 'strawberries', 'grapes']
+food = ['hamburger', 'juice', 'pizza', 'juice', 'fries', 'juice', 'hamburger', 'sushi']
+prices = [5.64, 3.92, 7.29, 4.95, 3.20]
 
-print(foods) # prints all
-print('First element is:', foods[0]) # prints first element
-print(foods[1]) # prints second element
-print(foods[2]) # prints third element
-
-# change out items
-foods[2] = 'avocados'
-print(foods)
-
-# selecting certain elements
-print(foods[0:2]) # [inclusive : exclusive]
-print(foods[3:]) # last two elements, leaving empty grabs everything till end
+# put something into the list - add to the list
+food.insert(5, 'cake') # insert(index, object)
 
 
+# merge two lists together
+food.extend(prices) # param is list to be added
 
+# find the index of a certain item
+print('The index of juice is:',food.index('juice')) 
+
+# count how many times an item is in the list
+print('How many times is juice in the list?:', food.count('juice'))
+
+# copy a list
+new_food = food.copy() + prices.copy() # new list that is a merge of food and prices twice
+
+print(food)
+print(new_food)
 print('-------------------------------') 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# delete everything from the list
+food.clear()
 
 
 
