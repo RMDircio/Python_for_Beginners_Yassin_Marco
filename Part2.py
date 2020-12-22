@@ -144,32 +144,32 @@
 ##               Part 3                ##
 # ------------------------------------- #
 
-# converstation between two people
+# # converstation between two people
 
-# rules
-def questions():
-    rules = input("Please answer all questions. Reply with 'yes' or 'no'")
-    if rules != 'yes': # stop
-        return print('Try again.')
-    else:
-        print('Next question:')
-    question1 = input('Are you hungry? ')
-    if question1 != 'yes': # stop
-        return print('Okay, shall we go for a walk?')
-    else:
-        print('Next Question')
-    question2 = input('Would you like to eat at a restaurant? ')
-    if question2 != 'yes':
-        return print('Come eat at my place then.')
-    else:
-        print('Next Question')
-    question3 = input('Should we have tacos? ')
-    if question3 != 'yes':
-        return print('What would you like instead?')
-    else:
-        print("Let's go!")
+# # rules
+# def questions():
+#     rules = input("Please answer all questions. Reply with 'yes' or 'no'")
+#     if rules != 'yes': # stop
+#         return print('Try again.')
+#     else:
+#         print('Next question:')
+#     question1 = input('Are you hungry? ')
+#     if question1 != 'yes': # stop
+#         return print('Okay, shall we go for a walk?')
+#     else:
+#         print('Next Question')
+#     question2 = input('Would you like to eat at a restaurant? ')
+#     if question2 != 'yes':
+#         return print('Come eat at my place then.')
+#     else:
+#         print('Next Question')
+#     question3 = input('Should we have tacos? ')
+#     if question3 != 'yes':
+#         return print('What would you like instead?')
+#     else:
+#         print("Let's go!")
 
-questions()
+# questions()
 
 # print('-------------------------------') 
 
@@ -181,14 +181,24 @@ questions()
 
 print('-------------------------------') 
 
+foods = ['apples', 'bananas', 'melons', 'strawberries', 'grapes']
+
+print(foods) # prints all
+print('First element is:', foods[0]) # prints first element
+print(foods[1]) # prints second element
+print(foods[2]) # prints third element
+
+# change out items
+foods[2] = 'avocados'
+print(foods)
+
+# selecting certain elements
+print(foods[0:2]) # [inclusive : exclusive]
+print(foods[3:]) # last two elements, leaving empty grabs everything till end
 
 
 
-
-
-
-
-
+print('-------------------------------') 
 
 
 
