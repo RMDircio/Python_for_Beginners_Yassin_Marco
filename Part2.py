@@ -200,44 +200,53 @@
 ##     Using Functions with Lists      ##
 # ------------------------------------- #
 
+
+# food = ['hamburger', 'juice', 'pizza', 'juice', 'fries', 'juice', 'hamburger', 'sushi']
+# prices = [5.64, 3.92, 7.29, 4.95, 3.20]
+
+# # put something into the list - add to the list
+# food.insert(5, 'cake') # insert(index, object)
+
+
+# # merge two lists together
+# food.extend(prices) # param is list to be added
+
+# # find the index of a certain item
+# print('The index of juice is:',food.index('juice')) 
+
+# # count how many times an item is in the list
+# print('How many times is juice in the list?:', food.count('juice'))
+
+# # copy a list
+# new_food = food.copy() + prices.copy() # new list that is a merge of food and prices twice
+
+# print(food)
+# print(new_food)
+
+# # delete everything from the list
+# food.clear()
+
+# print('-------------------------------') 
+
+
+# ------------------------------------- #
+##          Difference Between          ##
+##           List and Tuples            ##
+# ------------------------------------- #
+
+# lists - can manipulate
+list1 = [1,2,3,4] # brackets
+print(list1)
+
+# tuple - can NOT manipulate
+tuple1 = (1,2,3,4) # parentheses
+print(tuple1)
+
+# example
+colors = ('blue', 'yellow', 'red')
+shapes = ('square', 'triangle', 'circle')
+
+new_tuple = colors + shapes
+print(new_tuple)
+
 print('-------------------------------') 
-
-food = ['hamburger', 'juice', 'pizza', 'juice', 'fries', 'juice', 'hamburger', 'sushi']
-prices = [5.64, 3.92, 7.29, 4.95, 3.20]
-
-# put something into the list - add to the list
-food.insert(5, 'cake') # insert(index, object)
-
-
-# merge two lists together
-food.extend(prices) # param is list to be added
-
-# find the index of a certain item
-print('The index of juice is:',food.index('juice')) 
-
-# count how many times an item is in the list
-print('How many times is juice in the list?:', food.count('juice'))
-
-# copy a list
-new_food = food.copy() + prices.copy() # new list that is a merge of food and prices twice
-
-print(food)
-print(new_food)
-print('-------------------------------') 
-
-# delete everything from the list
-food.clear()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
