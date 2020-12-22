@@ -367,18 +367,51 @@
 ##        Testing Combinations         ##
 # ------------------------------------- #
 
+# # get all the combinations with nested loops
+# meal = ['pizza', 'burger', 'spaghetti']
+# drinks = ['water', 'juice', 'soda']
+# dessert = ['cake', 'ice cream', 'cookies']
+
+# # nested loop
+# for m in meal: # level 1
+#     for d in drinks: # level 2
+#         for ss in dessert: # level 3
+#             print(f'I will have {m} as my meal. Also I will have {d} as my drink. Dessert will be {ss}.')
+
+# print('-------------------------------')
+
+
+# ------------------------------------- #
+##       Creation of a Basic           ##
+##          Encryption App             ##
+# ------------------------------------- #
+
 
 print('-------------------------------')
 
-# get all the combinations with nested loops
-meal = ['pizza', 'burger', 'spaghetti']
-drinks = ['water', 'juice', 'soda']
-dessert = ['cake', 'ice cream', 'cookies']
+def crypted(sentence):
+    translation = '' # storage for new string that is encrypted
+    for element in sentence:
+        if element in 'Aa': # if letter is 'A' or 'a'
+            translation = translation + '1' # replacing 1 for A/a, put into 'translation' variable
+        elif element in 'Bb': # if letter is 'B' or 'b'
+            translation = translation + '2' # replacing 2 for B/b, put into 'translation' variable
+        elif element in 'Cc': # if letter is 'C' or 'c'
+            translation = translation + '3' # replacing 3 for B/b, put into 'translation' variable
+        # rest of alphabet
 
-# nested loop
-for m in meal: # level 1
-    for d in drinks: # level 2
-        for ss in dessert: # level 3
-            print(f'I will have {m} as my meal. Also I will have {d} as my drink. Dessert will be {ss}.')
+        else:
+            translation = translation + element
+    
+    return translation
+
+print('AccBab CaB encrypted is:', crypted('AccBab CaB'))
+
+
+
+
+
+
+
 
 print('-------------------------------')
