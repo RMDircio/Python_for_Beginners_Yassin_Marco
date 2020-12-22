@@ -257,31 +257,60 @@
 ##              in Python              ##
 # ------------------------------------- #
 
+# # dictionary need curved brackets {}
+# # keys need to be unique
+# colors = {
+#             'B' : 'Blue', # key : value
+#             'R' : 'Red',
+#             'O' : 'Orange'
+# }
+
+# # get the value from the key
+# print(colors.get('B', 'Stop')) # .get(what you want, default value if item is not in dictionary)
+# print(colors.get('G', 'Nope'))
+# print(colors.get('b', 'Nope'))
+
+# # create employee numbers and look them up
+# company_empolyees= {
+#                     555 : 'Nelson',
+#                     146 : 'Okan',
+#                     895 : 'Yesgi',
+#                     648 : 'Opeian',
+#                     721 : 'Hinesh'
+# }
+
+# print(company_empolyees.get(202, 'Employee is invalid'))
+
+
+# print('-------------------------------')
+
+
+# ------------------------------------- #
+##        Introduce the While          ##
+##           Loop Structure            ##
+# ------------------------------------- #
+
+var1 = 25
+var2 = 2000
+
+# while loops need a break out point
+while var1 < var2:
+    print('var1 is:', var1)
+    print('var1 is less than var2')
+    var1 = var1 + 5 # this is a long running break
+
 print('-------------------------------')
 
-# dictionary need curved brackets {}
-# keys need to be unique
-colors = {
-            'B' : 'Blue', # key : value
-            'R' : 'Red',
-            'O' : 'Orange'
-}
 
-# get the value from the key
-print(colors.get('B', 'Stop')) # .get(what you want, default value if item is not in dictionary)
-print(colors.get('G', 'Nope'))
-print(colors.get('b', 'Nope'))
+# ------------------------------------- #
+##       Understanding For Loops       ##
+# ------------------------------------- #
 
-# create employee numbers and look them up
-company_empolyees= {
-                    555 : 'Nelson',
-                    146 : 'Okan',
-                    895 : 'Yesgi',
-                    648 : 'Opeian',
-                    721 : 'Hinesh'
-}
+print('-------------------------------')
 
-print(company_empolyees.get(202, 'Employee is invalid'))
+
+
+
 
 
 print('-------------------------------')
