@@ -335,31 +335,50 @@
 ##   Creating and Blocking Passwords   ##
 # ------------------------------------- #
 
+# user_password = 'pass123'
+# user_answer = ''
+# num_attempts = 0 # counter --> starts at zero
+# max_attempts = 3 # number of attempts allowed
+# max_attempts_reached = 'Not Reached'
+
+# # as long as user_password is wrong, run code
+# while user_answer != user_password and max_attempts_reached != 'Reached':
+#     if num_attempts < max_attempts: # attempts less than allowed , continue code
+#         user_answer = input('Enter your password: ')
+#         num_attempts += 1 # plus one to counter
+        
+#     # when the counter gets to max level
+#     else:
+#         max_attempts_reached = 'Reached'
+
+# # print statement for when max attempts
+# if max_attempts_reached == 'Reached':
+#     print('You have attempted the maximum allowed attempts for loging in, try again tomorrow.')
+
+# # if the entered password is correct
+# else:
+#     print('Access Granted.')
+
+# print('-------------------------------')
+
+
+# ------------------------------------- #
+##              Pratice:               ##
+##        Testing Combinations         ##
+# ------------------------------------- #
+
+
 print('-------------------------------')
 
-user_password = 'pass123'
-user_answer = ''
-num_attempts = 0 # counter --> starts at zero
-max_attempts = 3 # number of attempts allowed
-max_attempts_reached = 'Not Reached'
+# get all the combinations with nested loops
+meal = ['pizza', 'burger', 'spaghetti']
+drinks = ['water', 'juice', 'soda']
+dessert = ['cake', 'ice cream', 'cookies']
 
-# as long as user_password is wrong, run code
-while user_answer != user_password and max_attempts_reached != 'Reached':
-    if num_attempts < max_attempts: # attempts less than allowed , continue code
-        user_answer = input('Enter your password: ')
-        num_attempts += 1 # plus one to counter
-        
-    # when the counter gets to max level
-    else:
-        max_attempts_reached = 'Reached'
-
-# print statement for when max attempts
-if max_attempts_reached == 'Reached':
-    print('You have attempted the maximum allowed attempts for loging in, try again tomorrow.')
-
-# if the entered password is correct
-else:
-    print('Access Granted.')
-
+# nested loop
+for m in meal: # level 1
+    for d in drinks: # level 2
+        for ss in dessert: # level 3
+            print(f'I will have {m} as my meal. Also I will have {d} as my drink. Dessert will be {ss}.')
 
 print('-------------------------------')
