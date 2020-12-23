@@ -412,25 +412,33 @@
 ##             and Objects             ##
 # ------------------------------------- #
 
-print('-------------------------------')
+# # class file is Pizza.py
 
-# class file is Pizza.py
+# from Pizza import Pizza1
 
-from Pizza import Pizza1
+# pizzaV = Pizza1('Veggie', 5 , 'Small')
+# pizzaP = Pizza1('Pepperoni', 10, 'Large')
 
-pizzaV = Pizza1('Veggie', 5 , 'Small')
-pizzaP = Pizza1('Pepperoni', 10, 'Large')
+# print(pizzaV.type)
+# print(pizzaV.size)
 
-print(pizzaV.type)
-print(pizzaV.size)
-
-
+# print('-------------------------------')
 
 
+# ------------------------------------- #
+##        Dealing with Errors          ##
+# ------------------------------------- #
 
 
-
-
-
+'''
+Syntax errors
+Logical errors
+Value errors
+'''
+try:
+    a = int(input('enter a number: ')) # value error if letter is given instead of number
+    print(1+a)
+except ValueError:
+    print('Please write a number')
 
 print('-------------------------------')
