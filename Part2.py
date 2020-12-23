@@ -386,26 +386,45 @@
 ##          Encryption App             ##
 # ------------------------------------- #
 
+# def crypted(sentence):
+#     translation = '' # storage for new string that is encrypted
+#     for element in sentence:
+#         if element in 'Aa': # if letter is 'A' or 'a'
+#             translation = translation + '1' # replacing 1 for A/a, put into 'translation' variable
+#         elif element in 'Bb': # if letter is 'B' or 'b'
+#             translation = translation + '2' # replacing 2 for B/b, put into 'translation' variable
+#         elif element in 'Cc': # if letter is 'C' or 'c'
+#             translation = translation + '3' # replacing 3 for B/b, put into 'translation' variable
+#         # rest of alphabet
+
+#         else:
+#             translation = translation + element
+    
+#     return translation
+
+# print('AccBab CaB encrypted is:', crypted('AccBab CaB'))
+
+# print('-------------------------------')
+
+
+# ------------------------------------- #
+##        Working with Classes         ##
+##             and Objects             ##
+# ------------------------------------- #
 
 print('-------------------------------')
 
-def crypted(sentence):
-    translation = '' # storage for new string that is encrypted
-    for element in sentence:
-        if element in 'Aa': # if letter is 'A' or 'a'
-            translation = translation + '1' # replacing 1 for A/a, put into 'translation' variable
-        elif element in 'Bb': # if letter is 'B' or 'b'
-            translation = translation + '2' # replacing 2 for B/b, put into 'translation' variable
-        elif element in 'Cc': # if letter is 'C' or 'c'
-            translation = translation + '3' # replacing 3 for B/b, put into 'translation' variable
-        # rest of alphabet
+# class file is Pizza.py
 
-        else:
-            translation = translation + element
-    
-    return translation
+from Pizza import Pizza1
 
-print('AccBab CaB encrypted is:', crypted('AccBab CaB'))
+pizzaV = Pizza1('Veggie', 5 , 'Small')
+pizzaP = Pizza1('Pepperoni', 10, 'Large')
+
+print(pizzaV.type)
+print(pizzaV.size)
+
+
 
 
 
