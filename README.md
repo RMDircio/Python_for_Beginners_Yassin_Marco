@@ -1,4 +1,4 @@
-# Python_for_Beginners_Yassin_Marco
+# Python for Beginners by Yassin Marco
 
 Link for the course:<br>
 [Python for Beginners by Yassin Marco](https://www.udemy.com/course/python-for-beginners-learn-all-the-basics-of-python/)
